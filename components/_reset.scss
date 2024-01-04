@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-raleway);
+  user-select: none;
+  transition: all var(--transition-timing);
+}
+
+.container {
+  display: grid;
+  row-gap: 11rem;
+  margin: 0 auto;
+  max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
+  /* max-width: var(--container-width); */
+  padding-inline: var(--gutter);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+  position: relative;
+}
+
+.section--with-bg {
+  padding: 11rem 0;
+}
+
+.section--with-bg::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-grey);
+  height: 100%;
+  width: 100vw;
+  justify-self: center;
+  z-index: -1;
+}
+
+.h2__heading,
+.h3-heading {
+  grid-column: 1 / -1;
+  font-weight: var(--font-weight-medium);
+}
+.h2__heading {
+  font-size: var(--font-size-65);
+  text-transform: uppercase;
+}
+.h3__heading {
+  font-size: var(--font-size-38);
+}
+
+.bio__links {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+}
+
+.say-hi-link-padding {
+  padding: 0.7rem 4.7rem;
+}
+
+.say-hi-link {
+  background-color: var(--color-link-bg);
+  color: var(--color-background);
+  transition: all var(--transition-timing);
+  cursor: pointer;
+}
+
+.say-hi-link:hover {
+  transform: scale(1.06);
+}
+
+.say-hi-link:active {
+  transform: scale(0.9);
+  background-color: #181918;
+}
+
+/* Theme */
+
+html:has(.toggle__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #080808;
+  --color-input-border: var(--color-white);
+}
+
+/* END Theme */

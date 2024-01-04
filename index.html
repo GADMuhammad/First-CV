@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Gad</title>
+
+    <!-- <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveDesign.css" /> -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Raleway FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+    <!--  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oxygen:wght@300;400;700&family=Pacifico&family=Playpen+Sans:wght@100;300;400;500&family=Questrial&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Readex+Pro:wght@400;700&family=Rubik+Doodle+Shadow&family=Whisper&display=swap"
+      rel="stylesheet"
+      /> -->
+    <!--  -->
+    <!--  -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!--  -->
+    <video class="video-loop" autoplay loop muted>
+      <source
+        src="../4- Advanced CSS Project/video-loop.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <div class="container">
+      <header class="header">
+        <!-- Burger Menu: -->
+        <label class="burger-menu" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+        <!--  -->
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li>
+              <a href="#bio" class="navigation-link navigation-bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation-link navigation-skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation-link navigation-projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation-link navigation-clients"
+                >My clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation-link navigation-contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--  -->
+
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="section bio">
+        <div class="bio__data">
+          <!--  -->
+          <h1 class="bio__heading">
+            Hi There, I'M A Passionate Front-End Developer
+          </h1>
+
+          <p class="bio__objective">
+            I am <span class="bio__name">Muhammad Gad.</span><br />Open to
+            innovative opportunities aligned with my skills, passionate about
+            enhancing the web, Eager to contribute to your financial success
+            through my expertise.
+            <!-- , a co-founder
+            of
+            <a href="#" class="bio__almdrasa">Almdrasa.com</a>
+            Software Engineer and a content creator who publish content on
+            <a href="#" class="bio__facebook">Facebook</a>,
+            <a href="" class="bio__twitter">Twitter</a>,
+            <a href="" class="Bio__linkedin">LinkedIn</a>,
+            <a href="" class="bio__youtube">Youtube</a> -->
+          </p>
+
+          <a href="#contact" class="bio__links say-hi-link say-hi-link-padding"
+            >Say Hi</a
+          >
+          <a href="#" class="bio__links find-out-link" target="_blank"
+            >Download CV <span class="bio__arrow">&darr;</span></a
+          >
+        </div>
+
+        <div class="bio__pic-content">
+          <img
+            src="images/5940345507794761074_121.jpg"
+            alt="img of Muhammad Abusrea"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="section skills section--with-bg">
+        <h2 class="h2__heading">Skills:</h2>
+
+        <!--  -->
+        <ul class="skills__skills">
+          <li class="skills__name">
+            <h3 class="skills__skill">Python</h3>
+            <span class="skills__experience">4 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">HTML</h3>
+            <span class="skills__experience">3 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">CSS</h3>
+            <span class="skills__experience">3 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">Javascript</h3>
+            <span class="skills__experience">2 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">Git</h3>
+            <span class="skills__experience">1 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">GitHub</h3>
+            <span class="skills__experience">1 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">Sass</h3>
+            <span class="skills__experience">1 years</span>
+          </li>
+
+          <!-- <li class="skills__name">
+            <h3 class="skills__skill">React Js</h3>
+            <span class="skills__experience">1 years</span>
+          </li>
+
+          <li class="skills__name">
+            <h3 class="skills__skill">Node JS</h3>
+            <span class="skills__experience">1 years</span>
+          </li> -->
+        </ul>
+        <!--  -->
+      </section>
+
+      <!-- <section class="video-section section">
+        <video class="video-section__video" controls>
+          <source
+            class="media__video"
+            src="../4- Advanced CSS Project/video-loop.webm"
+            type="video/ogg"
+          />
+          <source
+            src="../4- Advanced CSS Project/video-loop.ogg"
+            type="video/ogg"
+          />
+          <sources
+            src="../4- Advanced CSS Project/video-loop.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="../4- Advanced CSS Project/video-loop.webm"
+            type="video/webm"
+          />
+
+          Your browser does NOT support the video.
+        </video>
+      </section> -->
+      <!--  -->
+
+      <section id="projects" class="section projects">
+        <h2 class="h2__heading projects__heading">
+          My featured <br />
+          projects
+        </h2>
+
+        <img
+          src="images/Screenshot 2023-12-23 115413.png"
+          alt=""
+          class="project-img"
+        />
+
+        <div class="project first-project">
+          <h3 class="h3__heading projects__heading3">
+            A healthy meal delivered <br />
+            to your door.
+          </h3>
+          <p class="projects__paragraph">
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+
+          <a
+            href="https://muhammadgadfirstproject.netlify.app/"
+            class="bio__links say-hi-link say-hi-link-padding"
+            target="_blank"
+            >Open Project</a
+          >
+        </div>
+
+        <div class="project second-project">
+          <h3 class="h3__heading projects__heading3">
+            Ready to launch your app.
+            <br />in one, Application
+          </h3>
+          <p class="projects__paragraph">
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+
+          <a
+            href="https://muhammadgadsecondproject.netlify.app/"
+            class="bio__links say-hi-link say-hi-link-padding"
+            target="_blank"
+            >Open Project</a
+          >
+        </div>
+
+        <img
+          src="images/Screenshot 2023-12-23 131148.png"
+          alt=""
+          class="project-img"
+        />
+      </section>
+
+      <section id="clients" class="section clients section--with-bg">
+        <h2 class="h2__heading">
+          What my <br />
+          client says.
+        </h2>
+
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="clients__opinion">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="clients__opinion">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+        <div class=""></div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+
+          <a class="contact__email" href="mailto:muhammadgadwork@gmail.com"
+            >muhammadgadwork@gmail.com</a
+          >
+
+          <div class="contact__socials">
+            <!-- 1 -->
+            <a href="#" class="contact__social">
+              <ion-icon name="logo-github" alt="Icon of GitHub"></ion-icon>
+            </a>
+            <!-- 2 -->
+            <a href="#" class="contact__social">
+              <ion-icon name="logo-linkedin" alt="Icon of LinkedIn"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact__formContent">
+          <h2 class="h2__heading">
+            Let's work <br />
+            Together!
+          </h2>
+
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Full Name"
+                name="fullName"
+                required
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                name="telephone"
+                required
+              />
+            </div>
+
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <input
+              class="bio__links say-hi-link submit-padding"
+              type="submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+        <!--  -->
+      </section>
+
+      <footer class="footer">&copy; 2023 by Muhammad Gad</footer>
+    </div>
+  </body>
+</html>

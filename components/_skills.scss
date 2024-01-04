@@ -1,0 +1,23 @@
+.skills {
+  row-gap: 5rem;
+}
+
+.skills__skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
+  grid-column: 1/-1;
+}
+
+.skills__skill {
+  font-size: var(--font-size-38);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.skills__skill:hover {
+  text-shadow: 0 0 2px var(--color-green);
+}
+
+.skills__experience {
+  font-size: var(--font-size-22);
+}

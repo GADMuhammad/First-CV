@@ -1,0 +1,28 @@
+.projects {
+  row-gap: 6rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10rem;
+}
+
+.projects__heading {
+  text-transform: uppercase;
+  grid-column: 1/-1;
+  font-weight: bold;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: -2;
+}
+
+.projects__paragraph {
+  font-size: var(--font-size-22);
+  margin: 3rem 0;
+  line-height: 1.5;
+}
+
+.project {
+  align-self: center;
+}
